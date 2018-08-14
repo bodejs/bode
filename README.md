@@ -2,7 +2,7 @@
   <a href="https://nodejs.org/">
     <img
       alt="Node.js"
-      src="https://nodejs.org/static/images/logo-light.svg"
+      src="https://i.imgur.com/Q0jvjsJ.png"
       width="400"
     />
   </a>
