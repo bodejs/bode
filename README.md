@@ -1,19 +1,19 @@
 <p align="center">
-  <a href="https://nodejs.org/">
+  <a href="https://bodejs.org/">
     <img
-      alt="Node.js"
+      alt="Bode.js"
       src="https://i.imgur.com/Q0jvjsJ.png"
       width="400"
     />
   </a>
 </p>
 
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. For
-more information on using Node.js, see the
-[Node.js Website][].
+Bode.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. For
+more information on using Bode.js, see the
+[Bode.js Website][].
 
-The Node.js project is supported by the
-[Node.js Foundation](https://nodejs.org/en/foundation/). Contributions,
+The Bode.js project is supported by the
+[Bode.js Foundation](https://bodejs.org/en/foundation/). Contributions,
 policies, and releases are managed under an
 [open governance model](./GOVERNANCE.md).
 
@@ -29,35 +29,35 @@ policies, and releases are managed under an
     * [Nightly Releases](#nightly-releases)
     * [API Documentation](#api-documentation)
   * [Verifying Binaries](#verifying-binaries)
-* [Building Node.js](#building-nodejs)
+* [Building Bode.js](#building-bodejs)
 * [Security](#security)
 * [Current Project Team Members](#current-project-team-members)
   * [TSC (Technical Steering Committee)](#tsc-technical-steering-committee)
   * [Collaborators](#collaborators)
   * [Release Team](#release-team)
-* [Contributing to Node.js](#contributing-to-nodejs)
+* [Contributing to Bode.js](#contributing-to-bodejs)
 
 ## Support
 
-Node.js contributors have limited availability to address general support
+Bode.js contributors have limited availability to address general support
 questions. Please make sure you are using a [currently-supported version of
-Node.js](https://github.com/nodejs/Release#release-schedule).
+Bode.js](https://github.com/bodejs/Release#release-schedule).
 
 When looking for support, please first search for your question in these venues:
 
-* [Node.js Website][]
-* [Node.js Help][]
-* [Open or closed issues in the Node.js GitHub organization](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Anodejs+is%3Aissue)
+* [Bode.js Website][]
+* [Bode.js Help][]
+* [Open or closed issues in the Bode.js GitHub organization](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Abodejs+is%3Aissue)
 
 If you didn't find an answer in one of the official resources above, you can
 search these unofficial resources:
 
-* [Questions tagged 'node.js' on StackOverflow][]
-* [#node.js channel on chat.freenode.net][]. See <http://nodeirc.info/> for more
+* [Questions tagged 'bode.js' on StackOverflow][]
+* [#bode.js channel on chat.freebode.net][]. See <http://bodeirc.info/> for more
   information.
-* [Node.js Discord Community](https://discordapp.com/invite/v7rrPdE)
-* [Node.js Slack Community](https://node-js.slack.com/): Visit
-  [nodeslackers.com](http://www.nodeslackers.com/) to register.
+* [Bode.js Discord Community](https://discordapp.com/invite/v7rrPdE)
+* [Bode.js Slack Community](https://bode-js.slack.com/): Visit
+  [bodeslackers.com](http://www.bodeslackers.com/) to register.
 
 GitHub issues are meant for tracking enhancements and bugs, not general support.
 
@@ -67,13 +67,13 @@ and set your expectations accordingly.
 
 ## Release Types
 
-The Node.js project maintains multiple types of releases:
+The Bode.js project maintains multiple types of releases:
 
 * **Current**: Released from active development branches of this repository,
   versioned by [SemVer](https://semver.org) and signed by a member of the
   [Release Team](#release-team).
   Code for Current releases is organized in this repository by major version
-  number. For example: [v4.x](https://github.com/nodejs/node/tree/v4.x).
+  number. For example: [v4.x](https://github.com/bodejs/bode/tree/v4.x).
   The major version number of Current releases will increment every 6 months
   allowing for breaking changes to be introduced. This happens in April and
   October every year. Current release lines beginning in October each year have
@@ -92,30 +92,30 @@ The Node.js project maintains multiple types of releases:
   branch, automatically built every 24-hours where changes exist. Use with
   caution.
 
-More information can be found in the [LTS README](https://github.com/nodejs/LTS/).
+More information can be found in the [LTS README](https://github.com/bodejs/LTS/).
 
 ### Download
 
 Binaries, installers, and source tarballs are available at
-<https://nodejs.org>.
+<https://bodejs.org>.
 
 #### Current and LTS Releases
 **Current** and **LTS** releases are available at
-<https://nodejs.org/download/release/>, listed under their version strings.
-The [latest](https://nodejs.org/download/release/latest/) directory is an
+<https://bodejs.org/download/release/>, listed under their version strings.
+The [latest](https://bodejs.org/download/release/latest/) directory is an
 alias for the latest Current release. The latest LTS release from an LTS
 line is available in the form: latest-_codename_. For example:
-<https://nodejs.org/download/release/latest-argon>.
+<https://bodejs.org/download/release/latest-argon>.
 
 #### Nightly Releases
 **Nightly** builds are available at
-<https://nodejs.org/download/nightly/>, listed under their version
+<https://bodejs.org/download/nightly/>, listed under their version
 string which includes their date (in UTC time) and the commit SHA at
 the HEAD of the release.
 
 #### API Documentation
 **API documentation** is available in each release and nightly
-directory under _docs_. <https://nodejs.org/api/> points to the API
+directory under _docs_. <https://bodejs.org/api/> points to the API
 documentation of the latest stable version.
 
 ### Verifying Binaries
@@ -127,14 +127,14 @@ download.
 The SHASUMS256.txt can be downloaded using `curl`.
 
 ```console
-$ curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
+$ curl -O https://bodejs.org/dist/vx.y.z/SHASUMS256.txt
 ```
 
 To check that a downloaded file matches the checksum, run
 it through `sha256sum` with a command such as:
 
 ```console
-$ grep node-vx.y.z.tar.gz SHASUMS256.txt | sha256sum -c -
+$ grep bode-vx.y.z.tar.gz SHASUMS256.txt | sha256sum -c -
 ```
 
 Current and LTS releases (but not Nightlies) also have the GPG detached
@@ -155,25 +155,25 @@ See the bottom of this README for a full script to import active release keys.
 Next, download the SHASUMS256.txt.sig for the release:
 
 ```console
-$ curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt.sig
+$ curl -O https://bodejs.org/dist/vx.y.z/SHASUMS256.txt.sig
 ```
 
 After downloading the appropriate SHASUMS256.txt and SHASUMS256.txt.sig files,
 you can then use `gpg --verify SHASUMS256.txt.sig SHASUMS256.txt` to verify
-that the file has been signed by an authorized member of the Node.js team.
+that the file has been signed by an authorized member of the Bode.js team.
 
 Once verified, use the SHASUMS256.txt file to get the checksum for
 the binary verification command above.
 
-## Building Node.js
+## Building Bode.js
 
 See [BUILDING.md](BUILDING.md) for instructions on how to build
-Node.js from source. The document also contains a list of
+Bode.js from source. The document also contains a list of
 officially supported platforms.
 
 ## Security
 
-Security flaws in Node.js should be reported by emailing security@nodejs.org.
+Security flaws in Bode.js should be reported by emailing security@bodejs.org.
 Please do not disclose security bugs publicly until they have been handled by
 the security team.
 
@@ -184,7 +184,7 @@ handling your report.
 There are no hard and fast rules to determine if a bug is worth reporting as
 a security issue. The general rule is an issue worth reporting should allow an
 attacker to compromise the confidentiality, integrity, or availability of the
-Node.js application or its system for which the attacker does not already have
+Bode.js application or its system for which the attacker does not already have
 the capability.
 
 To illustrate the point, here are some examples of past issues and what the
@@ -194,13 +194,13 @@ us a report nonetheless.
 
 ### Public disclosure preferred
 
-- [#14519](https://github.com/nodejs/node/issues/14519): _Internal domain
+- [#14519](https://github.com/bodejs/bode/issues/14519): _Internal domain
   function can be used to cause segfaults_. Causing program termination using
   either the public JavaScript APIs or the private bindings layer APIs requires
   the ability to execute arbitrary JavaScript code, which is already the highest
   level of privilege possible.
 
-- [#12141](https://github.com/nodejs/node/pull/12141): _buffer: zero fill
+- [#12141](https://github.com/bodejs/bode/pull/12141): _buffer: zero fill
   Buffer(num) by default_. The buffer constructor behavior was documented,
   but found to be prone to [mis-use](https://snyk.io/blog/exploiting-buffer/).
   It has since been changed, but despite much debate, was not considered misuse
@@ -209,16 +209,16 @@ us a report nonetheless.
 
 ### Private disclosure preferred
 
-- [CVE-2016-7099](https://nodejs.org/en/blog/vulnerability/september-2016-security-releases/):
+- [CVE-2016-7099](https://bodejs.org/en/blog/vulnerability/september-2016-security-releases/):
   _Fix invalid wildcard certificate validation check_. This is a high severity
   defect that would allow a malicious TLS server to serve an invalid wildcard
-  certificate for its hostname and be improperly validated by a Node.js client.
+  certificate for its hostname and be improperly validated by a Bode.js client.
 
-- [#5507](https://github.com/nodejs/node/pull/5507): _Fix a defect that makes
+- [#5507](https://github.com/bodejs/bode/pull/5507): _Fix a defect that makes
   the CacheBleed Attack possible_. Many, though not all, OpenSSL vulnerabilities
-  in the TLS/SSL protocols also affect Node.js.
+  in the TLS/SSL protocols also affect Bode.js.
 
-- [CVE-2016-2216](https://nodejs.org/en/blog/vulnerability/february-2016-security-releases/):
+- [CVE-2016-2216](https://bodejs.org/en/blog/vulnerability/february-2016-security-releases/):
   _Fix defects in HTTP header parsing for requests and responses that can allow
   response splitting_. While the impact of this vulnerability is application and
   network dependent, it is remotely exploitable in the HTTP protocol.
@@ -228,9 +228,9 @@ When in doubt, please do send us a report.
 
 ## Current Project Team Members
 
-The Node.js project team comprises a group of core collaborators and a sub-group
+The Bode.js project team comprises a group of core collaborators and a sub-group
 that forms the _Technical Steering Committee_ (TSC) which governs the project.
-For more information about the governance of the Node.js project, see
+For more information about the governance of the Bode.js project, see
 [GOVERNANCE.md](./GOVERNANCE.md).
 
 ### TSC (Technical Steering Committee)
@@ -291,7 +291,7 @@ For more information about the governance of the Node.js project, see
 * [nebrius](https://github.com/nebrius) -
 **Bryan Hughes** &lt;bryan@nebri.us&gt;
 * [orangemocha](https://github.com/orangemocha) -
-**Alexis Campailla** &lt;orangemocha@nodejs.org&gt;
+**Alexis Campailla** &lt;orangemocha@bodejs.org&gt;
 * [piscisaureus](https://github.com/piscisaureus) -
 **Bert Belder** &lt;bertbelder@gmail.com&gt;
 * [shigeki](https://github.com/shigeki) -
@@ -390,7 +390,7 @@ For more information about the governance of the Node.js project, see
 * [iarna](https://github.com/iarna) -
 **Rebecca Turner** &lt;me@re-becca.org&gt;
 * [imyller](https://github.com/imyller) -
-**Ilkka Myller** &lt;ilkka.myller@nodefield.com&gt;
+**Ilkka Myller** &lt;ilkka.myller@bodefield.com&gt;
 * [indutny](https://github.com/indutny) -
 **Fedor Indutny** &lt;fedor.indutny@gmail.com&gt;
 * [italoacasas](https://github.com/italoacasas) -
@@ -418,7 +418,7 @@ For more information about the governance of the Node.js project, see
 * [julianduque](https://github.com/julianduque) -
 **Julian Duque** &lt;julianduquej@gmail.com&gt; (he/him)
 * [JungMinu](https://github.com/JungMinu) -
-**Minwoo Jung** &lt;minwoo@nodesource.com&gt; (he/him)
+**Minwoo Jung** &lt;minwoo@bodesource.com&gt; (he/him)
 * [kfarnung](https://github.com/kfarnung) -
 **Kyle Farnung** &lt;kfarnung@microsoft.com&gt; (he/him)
 * [kunalspathak](https://github.com/kunalspathak) -
@@ -440,7 +440,7 @@ For more information about the governance of the Node.js project, see
 * [mhdawson](https://github.com/mhdawson) -
 **Michael Dawson** &lt;michael_dawson@ca.ibm.com&gt; (he/him)
 * [misterdjules](https://github.com/misterdjules) -
-**Julien Gilli** &lt;jgilli@nodejs.org&gt;
+**Julien Gilli** &lt;jgilli@bodejs.org&gt;
 * [mmarchini](https://github.com/mmarchini) -
 **Matheus Marchini** &lt;matheus@sthima.com&gt;
 * [MoonBall](https://github.com/MoonBall) -
@@ -454,7 +454,7 @@ For more information about the governance of the Node.js project, see
 * [ofrobots](https://github.com/ofrobots) -
 **Ali Ijaz Sheikh** &lt;ofrobots@google.com&gt; (he/him)
 * [orangemocha](https://github.com/orangemocha) -
-**Alexis Campailla** &lt;orangemocha@nodejs.org&gt;
+**Alexis Campailla** &lt;orangemocha@bodejs.org&gt;
 * [othiym23](https://github.com/othiym23) -
 **Forrest L Norvell** &lt;ogd@aoaioxxysz.net&gt; (he/him)
 * [phillipj](https://github.com/phillipj) -
@@ -574,11 +574,11 @@ For more information about the governance of the Node.js project, see
 **Mike Tunnicliffe** &lt;m.j.tunnicliffe@gmail.com&gt;
 
 Collaborators follow the [COLLABORATOR_GUIDE.md](./COLLABORATOR_GUIDE.md) in
-maintaining the Node.js project.
+maintaining the Bode.js project.
 
 ### Release Team
 
-Node.js releases are signed with one of the following GPG keys:
+Bode.js releases are signed with one of the following GPG keys:
 
 * **Colin Ihrig** &lt;cjihrig@gmail.com&gt;
 `94AE36675C464D64BAFA68DD7434390BDBE9B9C5`
@@ -626,17 +626,17 @@ Previous releases may also have been signed with one of the following GPG keys:
 * **Timothy J Fontaine** &lt;tjfontaine@gmail.com&gt;
 `7937DFD2AB06298B2293C3187D33FF9D0246406D`
 
-## Contributing to Node.js
+## Contributing to Bode.js
 
 * [Contributing to the project][]
 * [Working Groups][]
 * [Strategic Initiatives][]
 
-[Code of Conduct]: https://github.com/nodejs/admin/blob/master/CODE_OF_CONDUCT.md
+[Code of Conduct]: https://github.com/bodejs/admin/blob/master/CODE_OF_CONDUCT.md
 [Contributing to the project]: CONTRIBUTING.md
-[Node.js Help]: https://github.com/nodejs/help
-[Node.js Website]: https://nodejs.org/en/
-[Questions tagged 'node.js' on StackOverflow]: https://stackoverflow.com/questions/tagged/node.js
-[Working Groups]: https://github.com/nodejs/TSC/blob/master/WORKING_GROUPS.md
-[Strategic Initiatives]: https://github.com/nodejs/TSC/blob/master/Strategic-Initiatives.md
-[#node.js channel on chat.freenode.net]: https://webchat.freenode.net?channels=node.js&uio=d4
+[Bode.js Help]: https://github.com/bodejs/help
+[Bode.js Website]: https://bodejs.org/en/
+[Questions tagged 'bode.js' on StackOverflow]: https://stackoverflow.com/questions/tagged/bode.js
+[Working Groups]: https://github.com/bodejs/TSC/blob/master/WORKING_GROUPS.md
+[Strategic Initiatives]: https://github.com/bodejs/TSC/blob/master/Strategic-Initiatives.md
+[#bode.js channel on chat.freebode.net]: https://webchat.freebode.net?channels=bode.js&uio=d4
